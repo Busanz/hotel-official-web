@@ -3,7 +3,7 @@ import styles from './hero.module.css';
 
 const Hero = () => {
   return (
-    <div className={styles.hero}>
+    <main className={styles.hero}>
       <p className={styles.hero_welcome}>Welcome to</p>
       <h1 className={styles.hero_title}>Beach Heaven Hotel</h1>
       <p className={styles.hero_description}>
@@ -11,7 +11,7 @@ const Hero = () => {
         hospitality that feels like home only better.
       </p>
       <CTA />
-    </div>
+    </main>
   );
 };
 

@@ -12,10 +12,8 @@
 
 .aboutUs_left {
   flex: 1;
-  height: 100%;
   overflow: hidden;
   display: block;
-  border-radius: 20px;
 }
 .aboutUs_image {
   display: block;
@@ -29,35 +27,13 @@
   padding: 2rem 2rem;
   justify-content: center;
 }
-.aboutUs_subtitle {
-  color: #470c82;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
-  padding-bottom: 2rem;
-}
-.aboutUs_title {
-  color: #470c82;
-  font-family: 'DM Serif Display', serif;
-  font-size: 2rem;
-  font-weight: 100;
-  letter-spacing: 1px;
-  padding-bottom: 1rem;
-}
-.aboutUs_description {
-  font-size: 1.08rem;
-  padding-bottom: 1rem;
-}
+
 .aboutUs_summery {
   display: flex;
   width: 60%;
   justify-content: space-between;
   flex-direction: row;
   padding-top: 2rem;
-}
-.aboutUs_summery_inner {
   padding-right: 2rem;
 }
 .aboutUs_summery_value {
@@ -70,9 +46,4 @@
 .aboutUs_summery_text {
   font-size: 0.9rem;
   color: #d77402;
-}
-.roomtype_card_features {
-  display: flex;
-  flex-direction: column;
-  background-color: #d77402;
 }

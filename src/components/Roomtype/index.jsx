@@ -1,17 +1,11 @@
 import styles from './roomtype.module.css';
-import { roomsTypes } from '../../data/data';
+import { roomsTypes, pageHeaderDetails } from '../../data/data';
+import PageHeader from '../PageHeader';
 
 const Roomtype = () => {
   return (
     <div className={styles.roomtype_wrapper}>
-      <div className={styles.roomtype_top}>
-        <p className={styles.roomtype_subtitle}>Accommodations</p>
-        <h1 className={styles.roomtype_title}>Our Rooms and Suites</h1>
-        <p className={styles.roomtype_description}>
-          From cozy retreats to grand suites find the perfect space for your
-          stay.
-        </p>
-      </div>
+      <PageHeader {...pageHeaderDetails[2]} />
       <div className={styles.roomtype}>
         {roomsTypes.map((item, index) => {
           return (
@@ -29,7 +23,7 @@ const Roomtype = () => {
                 </p>
                 <div className={styles.roomtype_card_features}>
                   {item.features.map((feature, index) => (
-                    <p key={index}>{feature}</p>
+                    <span key={index}>{feature}</span>
                   ))}
                 </div>
               </div>

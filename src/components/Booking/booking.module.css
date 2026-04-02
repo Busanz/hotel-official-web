@@ -1,0 +1,27 @@
+.booking {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  justify-content: center;
+  background-color: #dcfaf7;
+}
+.booking_checkin_date {
+  padding: 1rem 2rem;
+}
+.form {
+  display: block;
+  flex-direction: row;
+}
+.form div {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+}
+label {
+  padding: 1rem;
+  margin: 1rem;
+}
+input {
+  padding: 0.5rem;
+  width: 100%;
+}
