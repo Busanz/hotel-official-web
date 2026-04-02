@@ -1,0 +1,36 @@
+.contact {
+  background-color: #bebfff;
+  padding-bottom: 5rem;
+}
+.contact_wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contact_card {
+  width: 100%;
+  max-width: 250px;
+  height: 200px;
+  padding: 2rem;
+  background-color: #dcfaf7;
+  margin: 2rem;
+  text-align: center;
+  border-radius: 10px;
+}
+.contact_card div p:first-child {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 10px 0;
+  color: #470c82;
+}
+.icon {
+  align-items: center;
+  display: flex;
+  width: 42px;
+  height: 42px;
+  border: 0.5px solid #470c82;
+  border-radius: 50%;
+  margin: auto;
+  justify-content: center;
+}

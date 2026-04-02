@@ -2,6 +2,7 @@ import roomStandard from '../assets/images/standard.jpeg';
 import roomDeluxe from '../assets/images/deluxe.jpeg';
 import roomDeluxeSuite from '../assets/images/deluxe_suite.jpeg';
 import roomSuite from '../assets/images/presidential_suite.jpeg';
+import { FiMapPin, FiPhone, FiMail, FiClock } from 'react-icons/fi';
 
 export const menuLinks = ['home', 'about us', 'room', 'booking', 'contact'];
 
@@ -101,5 +102,28 @@ export const pageHeaderDetails = [
     descriptionLineOne:
       'Have a question or special request? We are here to help make your stay perfect..',
     descriptionLineTwo: '',
+  },
+];
+
+export const contactInfo = [
+  {
+    icon: FiMapPin,
+    title: 'Address',
+    value: 'No. 12, Beach Road, Unawatuna, Sri Lanka',
+  },
+  {
+    icon: FiPhone,
+    title: 'Phone',
+    value: '+94 77 123 4567',
+  },
+  {
+    icon: FiMail,
+    title: 'Email',
+    value: 'stay@beachheaven.lk',
+  },
+  {
+    icon: FiClock,
+    title: 'Front Desk',
+    value: '24/7 Guest Support',
   },
 ];

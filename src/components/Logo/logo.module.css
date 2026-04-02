@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 
+.logo {
+  position: relative;
+  z-index: 200;
+}
+.logo_footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 200;
+  padding-top: 4rem;
+  margin: auto;
+}
 .logo_beach {
   color: #a953fe;
   font-weight: bold;
@@ -12,6 +24,22 @@
   color: #490fbe;
   font-weight: bold;
   font-size: 2.3rem;
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.logo_beach_footer {
+  color: #f6f3f6;
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.logo_heaven_footer {
+  color: #7434f5;
+  font-weight: bold;
+  font-size: 3rem;
   font-family: 'DM Serif Display', serif;
   font-weight: 400;
   font-style: normal;

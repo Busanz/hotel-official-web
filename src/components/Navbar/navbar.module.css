@@ -6,11 +6,3 @@
   background-color: #c3d6ff;
   padding: 0.4rem 3rem;
 }
-.navlinks {
-  display: flex;
-}
-.navlink {
-  font-size: 1.15rem;
-  font-weight: 300;
-  padding: 5px 12px;
-}

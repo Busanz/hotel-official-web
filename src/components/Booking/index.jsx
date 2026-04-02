@@ -7,7 +7,7 @@ const Booking = () => {
     alert('Submit button is pressed');
   };
   return (
-    <div>
+    <div className={styles.booking}>
       <PageHeader {...pageHeaderDetails[3]} />
       <form onSubmit={handleSubmit} className={styles.form}>
         <div className={styles.name_email}>
