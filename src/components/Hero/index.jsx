@@ -1,7 +1,7 @@
 import CTA from '../CTA';
 import styles from './hero.module.css';
 
-const Hero = () => {
+const Hero = ({ setPageOnButton }) => {
   return (
     <main className={styles.hero}>
       <p className={styles.hero_welcome}>Welcome to</p>
@@ -10,7 +10,7 @@ const Hero = () => {
         Where timeless elegance meets modern comfort in sea beast. Experience
         hospitality that feels like home only better.
       </p>
-      <CTA />
+      <CTA setPageOnCTA={setPageOnButton} />
     </main>
   );
 };

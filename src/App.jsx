@@ -5,17 +5,30 @@ import Roomtype from './components/Roomtype';
 import Booking from './components/Booking';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import { useState } from 'react';
 
 function App() {
+  const [seletctPage, setSelectPage] = useState('home');
+
+  const displaySelectedPage = () => {
+    switch (seletctPage) {
+      case 'about us':
+        return <AboutUs />;
+      case 'room':
+        return <Roomtype />;
+      case 'booking':
+        return <Booking />;
+      case 'contact':
+        return <Contact />;
+      default:
+        return <Hero setPageOnButton={setSelectPage} />;
+    }
+  };
   return (
     <>
-      <Navbar />
-      <Hero />
-      <AboutUs />
-      <Roomtype />
-      <Booking />
-      <Contact />
-      <Footer />
+      <Navbar setSelectPageOnNav={setSelectPage} />
+      {displaySelectedPage()}
+      <Footer setSelectPageFooter={setSelectPage} />
     </>
   );
 }

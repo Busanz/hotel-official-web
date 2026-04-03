@@ -1,8 +1,11 @@
 import styles from './logo.module.css';
 
-const Logo = ({ isOnFooter }) => {
+const Logo = ({ isOnFooter, setSelectLogo }) => {
   return (
-    <div className={isOnFooter ? styles.logo_footer : styles.logo}>
+    <div
+      className={isOnFooter ? styles.logo_footer : styles.logo}
+      onClick={() => setSelectLogo('home')}
+    >
       <span
         className={isOnFooter ? styles.logo_beach_footer : styles.logo_beach}
       >

@@ -7,3 +7,7 @@
   font-size: 1.1rem;
   font-weight: 300;
 }
+.hero_button:hover {
+  cursor: pointer;
+  background-color: #490fbe;
+}

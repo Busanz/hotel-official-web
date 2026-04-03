@@ -4,6 +4,10 @@
   position: relative;
   z-index: 200;
 }
+.logo:hover {
+  cursor: pointer;
+}
+
 .logo_footer {
   position: relative;
   display: flex;
