@@ -26,3 +26,18 @@
   font-size: 1.08rem;
   padding-bottom: 1rem;
 }
+
+@media screen and (max-width: 768px) {
+  .page_header {
+    padding: 4rem 0 3rem 0;
+  }
+
+  .page_header_title {
+    font-size: 1.7rem;
+    font-weight: 100;
+    letter-spacing: normal;
+  }
+  .page_header_description {
+    font-size: 1.06rem;
+  }
+}

@@ -26,7 +26,7 @@ function App() {
   };
   return (
     <>
-      <Navbar setSelectPageOnNav={setSelectPage} />
+      <Navbar setSelectPageOnNav={setSelectPage} activePage={seletctPage} />
       {displaySelectedPage()}
       <Footer setSelectPageFooter={setSelectPage} />
     </>

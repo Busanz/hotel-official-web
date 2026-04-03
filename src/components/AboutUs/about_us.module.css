@@ -4,7 +4,7 @@
 .aboutUs_wrapper {
   display: flex;
   height: 90vh;
-  padding: 3rem 3rem;
+  padding: 3rem;
   justify-content: center;
   gap: 2rem;
   background-color: #dcfaf7;
@@ -46,4 +46,23 @@
 .aboutUs_summery_text {
   font-size: 0.9rem;
   color: #d77402;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutUs_wrapper {
+    display: block;
+    height: 100%;
+    padding: 1.5rem;
+  }
+  .aboutUs_right {
+    padding: 2.5rem 0;
+  }
+  .aboutUs_summery {
+    display: flex;
+    width: 90%;
+  }
+  .aboutUs_summery_value {
+    font-size: 1.7rem;
+    letter-spacing: normal;
+  }
 }

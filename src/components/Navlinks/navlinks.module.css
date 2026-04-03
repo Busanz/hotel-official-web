@@ -27,3 +27,12 @@
   cursor: pointer;
   color: #f9f9fb;
 }
+.active {
+  color: #5828b6;
+  font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .navlinks {
+    display: none;
+  }
+}

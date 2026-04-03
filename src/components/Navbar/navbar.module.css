@@ -8,3 +8,17 @@
   position: sticky;
   top: 0;
 }
+.mobile_menu {
+  display: none;
+  color: #490fbe;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0.4rem 1.5rem;
+  }
+  .mobile_menu {
+    display: block;
+    padding: 0.5rem 0.5rem;
+  }
+}

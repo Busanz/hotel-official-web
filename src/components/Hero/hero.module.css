@@ -28,3 +28,12 @@
   font-weight: 200;
   padding-bottom: 3rem;
 }
+
+@media screen and (max-width: 768px) {
+  .hero_title {
+    font-size: 2.1rem;
+  }
+  .hero_description {
+    font-size: 1.2rem;
+  }
+}

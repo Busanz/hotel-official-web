@@ -1,7 +1,7 @@
 .booking {
   display: flex;
   flex-direction: column;
-  padding-bottom: 5rem;
+  padding: 0 2rem 5rem 0;
   justify-content: center;
   background-color: #dcfaf7;
 }
@@ -28,7 +28,10 @@ input::placeholder {
   font-weight: 200;
 }
 .form {
-  width: 800px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 800px;
   margin: auto;
   padding: 2rem;
   background-color: #bebfff;
@@ -52,10 +55,12 @@ input::placeholder {
   height: 48px;
 }
 @media screen and (max-width: 900px) {
+  .booking {
+    padding: 0 2rem 3rem 2rem;
+  }
   .form {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 1rem;
+    width: 100%;
+    max-width: 500px;
   }
   .form div {
     display: grid;

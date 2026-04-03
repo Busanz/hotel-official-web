@@ -54,3 +54,9 @@
   font-size: 15px;
   background-color: #e8e9ff;
 }
+
+@media screen and (max-width: 768px) {
+  .roomtype_wrapper {
+    padding: 0 2rem 4rem 2rem;
+  }
+}
