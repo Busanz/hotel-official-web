@@ -56,16 +56,23 @@ input::placeholder {
 }
 @media screen and (max-width: 900px) {
   .booking {
-    padding: 0 2rem 3rem 2rem;
+    padding: 0 0.5rem 3rem 0.5rem;
   }
   .form {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
+    padding: 2rem 1rem 2rem 1rem;
   }
   .form div {
     display: grid;
     grid-template-columns: 1fr;
-    column-gap: 2rem;
     padding-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .form {
+    max-width: 500px;
+    padding: 2rem 0.5rem 2rem 0.5rem;
   }
 }
