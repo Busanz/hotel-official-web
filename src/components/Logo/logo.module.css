@@ -59,4 +59,8 @@
   .logo_heaven_footer {
     font-size: 2.5rem;
   }
+
+  .mobile_close {
+    background-color: aqua;
+  }
 }

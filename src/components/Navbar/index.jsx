@@ -2,8 +2,20 @@ import styles from './navbar.module.css';
 import Navlinks from '../Navlinks';
 import Logo from '../Logo';
 import { RxHamburgerMenu } from 'react-icons/rx';
+import { useState } from 'react';
 
 const Navbar = ({ setSelectPageOnNav, activePage }) => {
+  const [mobileActive, setMobileActive] = useState(false);
+
+  const handleClick = () => {
+    const scrolling = !mobileActive;
+    setMobileActive(scrolling);
+    const root = document.querySelector('#root');
+    scrolling && root
+      ? root.classList.add('stop_scrolling')
+      : root.classList.remove('stop_scrolling');
+  };
+
   return (
     <nav className={styles.navbar}>
       <Logo isOnFooter={false} setSelectLogo={setSelectPageOnNav} />
@@ -11,9 +23,14 @@ const Navbar = ({ setSelectPageOnNav, activePage }) => {
         isOnFooter={false}
         setSelectNavLink={setSelectPageOnNav}
         activePage={activePage}
-        className={styles.nav_links}
+        isMobileNavLinks={mobileActive}
+        setIsMobileNavLink={handleClick}
       />
-      <RxHamburgerMenu className={styles.mobile_menu} size={52} />
+      <RxHamburgerMenu
+        className={styles.mobile_menu}
+        size={52}
+        onClick={handleClick}
+      />
     </nav>
   );
 };
